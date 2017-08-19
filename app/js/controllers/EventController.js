@@ -3,10 +3,12 @@
 eventsApp.controller('EventController', 
 	function EventController($scope){
 
+		$scope.sortorder = 'name';
 		$scope.event = {
 			name: 'Angular Boot Camp',
-			date: '08/23/2017',
+			date: '1288323623006',
 			time: '12:00 pm',
+			price: 34,
 			location: {
 				address: 'Google HeadQuarters',
 				city: 'Mountain View',
@@ -17,7 +19,7 @@ eventsApp.controller('EventController',
 				{
 					name: 'Directive Masterclass',
 					creatorName: 'Aditya Vishal',
-					duration: '1 hour',
+					duration: '1',
 					level: 'Abstract',
 					abstract: "In this session, you will learn the advanced concepts of directive",
 					upVoteCount: 0
@@ -25,16 +27,16 @@ eventsApp.controller('EventController',
 				{
 					name: 'Scopes for fun and profit',
 					creatorName: 'Sukesh Aedla',
-					duration: '30 minutes',
-					level: 'Introductory',
+					duration: '2',
+					level: 'Intermediate',
 					abstract: "In this session, we will take a closer look at scopes",
 					upVoteCount: 0
 				},
 				{
 					name: 'Well Behaved Controllers',
 					creatorName: 'Aditya Vishal',
-					duration: '2 hours',
-					level: 'Abstract',
+					duration: '4',
+					level: 'Advanced',
 					abstract: "In this session, you will learn the advanced concepts of controllers",
 					upVoteCount: 0
 				}				
