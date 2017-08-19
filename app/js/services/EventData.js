@@ -1,9 +1,9 @@
 'use strict';
 
-eventsApp.factory('eventData', function($http, $log){
+eventsApp.factory('eventData', function($resource){
 	return {
-		getEvent: function(successcb){
-			return $http({method: 'GET', url: '/data/event/1'});
+		getEvent: function(){
+			return $resource('/data/event/:id', {id: '@id'}).get({id:1});
 		}
 	}
 })
